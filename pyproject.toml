@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "automatizacion-planeacion-vpp"
+version = "0.1.0"
+description = "Automatización del seguimiento de planeación estratégica de ProColombia — generación de matrices Excel, presentaciones PPTX y consolidados."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+authors = [
+    {name = "Néstor Enrique Forero Herrera", email = "enrique.economista@gmail.com"},
+]
+keywords = ["ProColombia", "planeación", "seguimiento", "automatización", "PPTX", "Excel", "Colombia"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Office/Business",
+    "Natural Language :: Spanish",
+]
+dependencies = [
+    "pandas>=1.5",
+    "openpyxl>=3.0",
+    "python-pptx>=0.6.21",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "pytest-cov>=4.0"]
+
+[project.urls]
+Homepage      = "https://github.com/EnriqueForero/automatizacion-planeacion-vpp"
+Repository    = "https://github.com/EnriqueForero/automatizacion-planeacion-vpp"
+"Bug Tracker" = "https://github.com/EnriqueForero/automatizacion-planeacion-vpp/issues"
+
+[tool.setuptools.packages.find]
+where   = ["."]
+include = ["procolombia*"]
+exclude = ["tests*", "notebooks*", "docs*"]
+
+[tool.setuptools.package-data]
+"procolombia" = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths    = ["tests"]
+python_files = ["test_*.py"]
+addopts      = "-v --tb=short"

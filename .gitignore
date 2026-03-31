@@ -1,0 +1,95 @@
+# ════════════════════════════════════════════════════════════════════
+# .gitignore — automatizacion-planeacion-vpp
+# Generado automáticamente por el notebook de publicación.
+# PRINCIPIO: solo va a git el CÓDIGO.
+# ════════════════════════════════════════════════════════════════════
+
+
+# ── Python ────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+
+# ── Datos y archivos binarios ─────────────────────────────────────────
+*.csv
+*.gif
+*.ipynb
+*.jpeg
+*.jpg
+*.parquet
+*.pdf
+*.png
+*.pptx
+*.xls
+*.xlsx
+*.zip
+
+
+# ── Carpetas excluidas ────────────────────────────────────────────────
+.eggs/
+.git/
+.ipynb_checkpoints/
+.venv/
+Backups/
+__pycache__/
+build/
+dist/
+env/
+mnt/
+venv/
+
+
+# ── Archivos específicos excluidos ────────────────────────────────────
+Guia_Automatizacion_ProColombia_v5.1.md
+
+# ── Excepciones (siempre incluir) ────────────────────────────────
+!01_excels_entrada/Matriz_Captura_v2_ProColombia.xlsx
+!04_plantillas/Plantilla_Misional.pptx
+!04_plantillas/Plantilla_Territorial.pptx
+!04_plantillas/Plantilla_Transversal.pptx
+!notebooks/2026-03-31 Automatización seguimiento planeación VPP.ipynb
+
+
+# ── Notebooks Jupyter ─────────────────────────────────────────────────
+*.ipynb
+.ipynb_checkpoints/
+
+
+# ── Carpetas de trabajo personal ──────────────────────────────────────
+z. */
+z.*/
+
+
+# ── Artefactos de Google Colab ────────────────────────────────────────
+mnt/
+
+
+# ── IDE ───────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+
+# ── Entornos virtuales ────────────────────────────────────────────────
+venv/
+.venv/
+env/
+.env
+
+
+# ── Credenciales ──────────────────────────────────────────────────────
+.env.local
+secrets.json
+*_token.txt
+*.pem
+*.key
