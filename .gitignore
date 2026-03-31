@@ -70,7 +70,7 @@ secrets.json
 
 
 # ── Excepciones (siempre incluir) ────────────────────────────────
-# ⚠️  Estas reglas DEBEN ser las últimas del archivo.
+# Estas reglas DEBEN ser las últimas del archivo.
 # En .gitignore la última coincidencia gana; si una regla
 # de exclusión aparece después de una excepción, la anula.
 !01_excels_entrada/Matriz_Captura_v2_ProColombia.xlsx
